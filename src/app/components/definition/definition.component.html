@@ -1,0 +1,47 @@
+<div class="container">
+  <section class="section-1 row">
+    <div class="word">
+      <div class="word-title">{{ word.word }}</div>
+      <div class="phonetic">{{ word.phonetic }}</div>
+    </div>
+    <div class="pronunciation">
+      <button *ngIf="hasSound" class="play-sound" (click)="playAudio()">
+        &#9654;
+      </button>
+    </div>
+  </section>
+  <section class="section-2">
+    <div class="meaning" *ngFor="let meaning of meanings; let i = index">
+      <div class="part-of-speech">
+        <hr />
+        <div>{{ meaning.partOfSpeech }}</div>
+      </div>
+      <div class="meaning">
+        <div
+          id="list-definitions"
+          class="list-definitions"
+          *ngFor="let definition of meaning.definitions; let j = index"
+        >
+          <li class="list-item">
+            <div id="definition" class="definition">
+              {{ definition.definition }}
+            </div>
+          </li>
+        </div>
+        <div
+          *ngIf="meaning.synonyms[0] !== undefined"
+          id="synonyms"
+          class="synonyms"
+        >
+          Synonyms: {{ meaning.synonyms }}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-3">
+    <div class="attribution row">
+      Source:
+      <a [href]="word.sourceUrls" target="_blank">{{ word.sourceUrls }}</a>
+    </div>
+  </section>
+</div>

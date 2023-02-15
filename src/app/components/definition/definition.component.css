@@ -1,0 +1,149 @@
+section {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 10;
+  min-width: 100px;
+  /* min-height: 100px; */
+  height: fit-content;
+  width: 90%;
+  margin: 0px auto;
+}
+div {
+  display: grid;
+  height: fit-content;
+  width: 100%;
+  min-width: 50px;
+  min-height: 50px;
+  margin: 5px auto;
+}
+
+button {
+  margin: auto;
+  outline: none;
+}
+
+button:active {
+  border: 2px solid black;
+}
+
+hr {
+  width: 100%;
+  color: black;
+  margin: 20px 0px;
+}
+
+.row {
+  grid-auto-flow: column;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "section-1"
+    "section-2"
+    "section-3";
+
+  margin: auto;
+  padding: 0px;
+  max-width: 750px;
+  width: 100%;
+  height: fit-content;
+}
+.section-1 {
+  grid-area: section-1;
+  grid-template-columns: 8fr 2fr;
+  align-items: center;
+  margin: 20px 0px auto;
+}
+.word {
+  justify-content: left;
+  padding-left: 25px;
+}
+
+.word-title {
+  font-size: 4rem;
+}
+.phonetic {
+  font-size: 1.6rem;
+  text-align: left;
+  color: var(--secondary-color);
+}
+
+.pronunciation {
+  align-items: center;
+}
+
+.play-sound {
+  border-radius: 50%;
+  border: none;
+  width: 45px;
+  height: 45px;
+  background-color: var(--secondary-color);
+}
+
+.section-2 {
+  grid-area: section-2;
+}
+
+.part-of-speech {
+  font-size: 2rem;
+  align-items: center;
+  margin: 0px;
+}
+
+.definition,
+.synonyms {
+  font-size: 1.6rem;
+  align-items: center;
+}
+
+.section-3 {
+  grid-area: section-3;
+  /* margin: 0px; */
+}
+
+.attribution{
+  justify-content: start;
+}
+
+@media (max-width: 450px) {
+  .container {
+    max-width: 350px;
+  }
+
+  .word {
+    justify-content: left;
+  }
+
+  .word-title {
+    font-size: 3rem;
+  }
+
+  .pronunciation {
+    align-items: center;
+    margin: 5px;
+  }
+
+  .play-sound {
+    border-radius: 50%;
+    border: none;
+    width: 45px;
+    height: 45px;
+    background-color: var(--secondary-color);
+  }
+
+  .section-2 {
+    grid-area: section-2;
+    width: 90%;
+  }
+
+  .part-of-speech {
+    font-size: 2rem;
+    align-items: center;
+    margin: 0px;
+  }
+
+
+}

@@ -1,0 +1,19 @@
+<div class="container">
+  <section class="section-1 row">
+    <input
+      [(ngModel)]="searchValue"
+      type="search"
+      name="search"
+      id="search"
+      class="search"
+      placeholder="enter your word"
+    />
+    <button class="search-button" (click)="getWordDefinition()">
+      Search icon
+    </button>
+  </section>
+  <section *ngIf="showDefinition" class="section-2">
+    <app-definition></app-definition>
+  </section>
+  <footer class="footer"></footer>
+</div>

@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --primary-color-light: white;
+  --primary-color-dark: #1f1f1f;
+  --secondary-color: #5ea7ec;
+  --text-color-light: black;
+  --text-color-dark: white;
+  --light-search-background: #f4f4ff;
+  --dark-search-background: #4c4d5f;
+
+  --basic-primary: #1f1f1f;
+  --basic-secondary: #facfce;
+  --basic-text-1: #1f1f1f;
+  --basic-text-2: lightgray;
+
+  --backstage-primary: #01c2b5;
+  --backstage-secondary: #2b1e1c;
+  --backstage-text-1: #2b1e1c;
+  --backstage-text-2: #ffffff;
+
+  --bonsai-primary: #00b289;
+  --bonsai-secondary: #f8db62;
+  --bonsai-text-1: #4c4d5f;
+  --bonsai-text-2: #ffffff;
+
+  --canal-blue: #5ea7ec;
+  --canal-red: #f64444;
+  --canal-yellow: #ffb400;
+  --canal-text: #000;
+  --canal-background: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  /* min-height: 50px; */
+}
+/* li {
+  font-size: 2rem;
+  align-items: center;
+  color: var(--secondary-color);
+} */
+
+html {
+  padding: 0px;
+  margin: 0px;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+body {
+  background-color: var(--primary-color-light);
+  color: var(--text-color-light);
+  font-family: Verdana, sans serif;
+  margin: 0px;
+  padding: 0px;
+  font-size: 1rem;
+  min-height: 100%;
+}
+body.dark-theme {
+  background-color: var(--primary-color-dark);
+  color: var(--text-color-dark);
+}
+
+div {
+  width: 100%;
+  /* min-height: 50px; */
+}
+main {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  outline: none;
+}
+button {
+  outline: none;
+  border-radius: 5px;
+}
+
+button:active {
+  border: 2px solid black;
+}
+.container {
+  margin: 100px 0px auto;
+}
