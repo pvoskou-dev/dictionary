@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "dictionary-493a9": {
+      "hosting": {
+        "dictionary": [
+          "dictionary-493a9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "dictionary-493a9"
+  }
+}
