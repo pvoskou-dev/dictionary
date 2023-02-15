@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { DataService } from 'src/app/services/data.service';
 import { IWord } from '../interfaces/IWord';
-import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-definition',
@@ -29,7 +29,7 @@ export class DefinitionComponent implements OnInit {
   };
   meanings = this.word.meanings;
   hasSound = false;
-  faPlay = faPlay
+  faPlay = faPlay;
 
   constructor(private dataService: DataService) {}
 
@@ -39,6 +39,9 @@ export class DefinitionComponent implements OnInit {
       if (value !== '') {
         this.word = value;
         this.meanings = this.word.meanings;
+        this.meanings[0].synonyms = [
+          this.meanings[0].synonyms.join(',').replace(',', ', '),
+        ];
       }
 
       if (this.word.audioPronunciation !== '') {
