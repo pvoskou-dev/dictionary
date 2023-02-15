@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { BehaviorSubject } from 'rxjs';
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-header',
@@ -11,6 +12,7 @@ export class HeaderComponent implements OnInit {
   title = 'Dictionary';
   fontValue: string = 'serif';
   toggleDarkMode = false;
+  faMoon = faMoon
 
   constructor() {}
 
@@ -22,11 +24,6 @@ export class HeaderComponent implements OnInit {
 
   toggleLightDark() {
     document.body.classList.toggle('dark-theme');
-    const definition = document.getElementById('definition');
-    definition?.classList.toggle('dark-theme');
-    const synonyms = document.getElementById('synonyms');
-    synonyms?.classList.toggle('dark-theme');
-    const definitions = document.getElementById('list-definitions');
-    definitions?.classList.toggle('dark-theme');
+
   }
 }

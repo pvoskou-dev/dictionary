@@ -114,6 +114,7 @@ li {
 
 .attribution {
   justify-content: start;
+  width: 80%;
 }
 
 @media (max-width: 450px) {

@@ -49,6 +49,7 @@ button:active {
   width: fit-content;
   height: fit-content;
   margin: 5px;
+  font-size: 2rem;
 }
 
 /* TOGGLE BUTTON */

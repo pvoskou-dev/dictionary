@@ -6,7 +6,7 @@
     </div>
     <div class="pronunciation">
       <button *ngIf="hasSound" class="play-sound" (click)="playAudio()">
-        &#9654;
+        <fa-icon [icon]="faPlay"></fa-icon>
       </button>
     </div>
   </section>

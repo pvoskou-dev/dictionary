@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { DataService } from 'src/app/services/data.service';
 import { IWord } from '../interfaces/IWord';
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-definition',
@@ -28,6 +29,7 @@ export class DefinitionComponent implements OnInit {
   };
   meanings = this.word.meanings;
   hasSound = false;
+  faPlay = faPlay
 
   constructor(private dataService: DataService) {}
 

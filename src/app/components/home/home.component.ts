@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faCoffee, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 import { DataService } from 'src/app/services/data.service';
 
@@ -10,6 +11,7 @@ import { DataService } from 'src/app/services/data.service';
 export class HomeComponent implements OnInit {
   searchValue: string = '';
   showDefinition = false;
+  faSearch = faSearch;
 
   constructor(private dataService: DataService) {}
 

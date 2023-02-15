@@ -1,19 +1,12 @@
 <header class="header row">
   <div class="title">{{ title }}</div>
   <div class="options row">
-    <div class="choose-font">
-      <select [(ngModel)]="fontValue" (change)="fontValueSelected()">
-        <option selected value="serif">Serif</option>
-        <option value="sans-serif">Sans Serif</option>
-        <option value="mono">Monospace</option>
-      </select>
-    </div>
     <div class="light-dark-mode row">
       <label class="switch">
         <input class="toggle" (click)="toggleLightDark()" type="checkbox" />
         <span class="slider round"></span>
       </label>
-      <div class="icon">ICON</div>
+      <div class="icon"><fa-icon [icon]="faMoon"></fa-icon></div>
     </div>
   </div>
 </header>

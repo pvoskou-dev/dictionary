@@ -9,7 +9,7 @@
       placeholder="enter your word"
     />
     <button class="search-button" (click)="getWordDefinition()">
-      Search icon
+      <fa-icon [icon]="faSearch"></fa-icon>
     </button>
   </section>
   <section *ngIf="showDefinition" class="section-2">
