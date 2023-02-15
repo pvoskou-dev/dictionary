@@ -4,9 +4,8 @@ section {
   grid-template-rows: auto;
   gap: 10;
   min-width: 100px;
-  /* min-height: 100px; */
   height: fit-content;
-  width: 90%;
+  width: 100%;
   margin: 0px auto;
 }
 div {
@@ -73,6 +72,7 @@ hr {
 
 .pronunciation {
   align-items: center;
+  padding-right: 25px;
 }
 
 .play-sound {
@@ -87,10 +87,19 @@ hr {
   grid-area: section-2;
 }
 
+.meaning {
+  width: 90%;
+}
+
 .part-of-speech {
   font-size: 2rem;
   align-items: center;
   margin: 0px;
+}
+
+li {
+  font-size: 2rem;
+  align-items: center;
 }
 
 .definition,
@@ -101,10 +110,9 @@ hr {
 
 .section-3 {
   grid-area: section-3;
-  /* margin: 0px; */
 }
 
-.attribution{
+.attribution {
   justify-content: start;
 }
 
@@ -144,6 +152,4 @@ hr {
     align-items: center;
     margin: 0px;
   }
-
-
 }

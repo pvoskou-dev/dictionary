@@ -18,19 +18,17 @@
       </div>
       <div class="meaning">
         <div
-          id="list-definitions"
           class="list-definitions"
           *ngFor="let definition of meaning.definitions; let j = index"
         >
           <li class="list-item">
-            <div id="definition" class="definition">
+            <div class="definition">
               {{ definition.definition }}
             </div>
           </li>
         </div>
         <div
           *ngIf="meaning.synonyms[0] !== undefined"
-          id="synonyms"
           class="synonyms"
         >
           Synonyms: {{ meaning.synonyms }}

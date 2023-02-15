@@ -80,6 +80,7 @@ button:active {
 .section-2 {
   grid-area: section-2;
   border: 1px solid black;
+  width: 100%;
 }
 
 @media (max-width: 450px) {
