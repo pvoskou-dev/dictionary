@@ -10,6 +10,28 @@
   --dark-search-background: #4c4d5f;
 }
 
+@media (prefers-color-scheme: light) {
+  body {
+    color: var(--text-color-light);
+    background-color: var(--primary-color-light);
+  }
+  body.theme {
+    background-color: var(--primary-color-dark);
+    color: var(--text-color-dark);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--text-color-dark);
+    background-color: var(--primary-color-dark);
+  }
+  body.theme {
+    background-color: var(--primary-color-light);
+    color: var(--text-color-light);
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -22,19 +44,12 @@ html {
   height: 100%;
 }
 body {
-  background-color: var(--primary-color-light);
-  color: var(--text-color-light);
   font-family: Verdana, sans serif;
   margin: 0px;
   padding: 0px;
   font-size: 1rem;
   min-height: 100%;
 }
-body.dark-theme {
-  background-color: var(--primary-color-dark);
-  color: var(--text-color-dark);
-}
-
 div {
   width: 100%;
 }
